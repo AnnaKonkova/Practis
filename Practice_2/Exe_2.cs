@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class Exe_2 : MonoBehaviour
 {
-    // Start is called before the first frame update
     void Start()
     {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+        using UnityEngine;
+
+public class Exe2 : MonoBehaviour
     {
-        
+        private void Start()
+        {
+            const float pi = 3.14f;
+            float rad = 5;
+            float sq = pi * Mathf.Pow(rad, 2);
+
+            print($" The area of the circle is equal to  = {sq}");
+        }
     }
 }

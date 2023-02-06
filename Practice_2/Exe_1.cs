@@ -4,15 +4,38 @@ using UnityEngine;
 
 public class Exe_1 : MonoBehaviour
 {
-    // Start is called before the first frame update
     void Start()
     {
-        
-    }
+        using UnityEngine;
 
-    // Update is called once per frame
-    void Update()
+public class Exe1 : MonoBehaviour
     {
-        
+        string line = "ajdfajAdjhfAahhAj;aj 0 ;aknkjfbAAnjj";
+
+        private void Start()
+        {
+            int countAa = 0;
+            int Length = 0;
+
+            foreach (char simvol in line)
+            {
+                if (simvol == '0')
+                {
+                    Debug.Log($"Zero is contained in {Length}");
+                    break;
+                }
+
+
+                if (simvol == 'a' || simvol == 'A')
+                {
+                    countAa++;
+                }
+                Length++;
+            }
+            print($"Number of characters a and A: {countAa}");
+            Debug.Log($"line length: {Length}");
+        }
     }
 }
+
+

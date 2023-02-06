@@ -1,18 +1,21 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class Exe_3 : MonoBehaviour
+public class Exe3 : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        
-    }
+        float necessq = 20;
+        float len = 5;
+        float width = 9;
+        float sq = len * width;
+        if (sq > necessq)
+        {
+            print($" Площадь = {sq}, начальная: {necessq}, разница: {necessq - sq}");
+        }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        else
+        {
+            print("Расчитанная площадь меньше");
+        }
     }
 }

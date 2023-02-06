@@ -1,18 +1,19 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class Exe_4 : MonoBehaviour
+public class Exe4 : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        
-    }
+        for (int i = 5; i <= 10; i++)
+        {
+            string result = "";
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+            for (int j = 5; j <= 10; j++)
+            {
+                result += $"{i}x{j}={i * j} \n ";
+            }
+            print(result);
+        }
+
     }
 }
