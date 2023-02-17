@@ -11,11 +11,15 @@ namespace Practice_exe3
     {
         internal int n { get; set; }
 
-        //public int Narray_1, Narray_2;
+        public int Narray_1, Narray_2;
+
+        //I 'll wrap it in methods in two ways
 
         static void Main()
         {
+            //The first way
             Exercise1();
+            //The second way
             var executive = new Program();
             executive.Exercise2();
 
@@ -61,6 +65,7 @@ namespace Practice_exe3
             Console.WriteLine($"number of elements of the source array {n * n}");
             Console.ReadLine();
         }
+
         void Exercise2()
         {
             //var n = 10;
