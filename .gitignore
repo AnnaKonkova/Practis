@@ -2,9 +2,7 @@
 /shelf/
 /workspace.xml
 
-**/bin
-**/obj
-**/.vs
-**/.idea
-**/.csproj
-*/.sln
+*.csproj
+Practies.sln
+obj
+.vs
