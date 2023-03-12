@@ -1,8 +1,9 @@
 # Default ignored files
 /shelf/
 /workspace.xml
-
-*.csproj
-Practies.sln
-obj
-.vs
+**/bin
+**/obj
+**/.vs
+**/.idea
+**/.csproj
+*/.sln
